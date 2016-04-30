@@ -7,6 +7,8 @@ class HomeScreen < PM::Screen
     @doctor_btn = append(UIButton, :doctor).on(:tap) do |s|
       open DoctorInputScreen.new
     end
-    @patient_btn = append(UIButton, :patient)
+    @patient_btn = append(UIButton, :patient).on(:tap) so |s|
+      open PatientTrackingScreen.new
+    end
   end
 end
