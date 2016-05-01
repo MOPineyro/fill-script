@@ -10,6 +10,7 @@ gem "afmotion" # Networking
 # Debugging tools
 gem "newclear" # Completely wipe out the simulator and rebuild
 
+gem 'ProMotion-XLForm'
 # Optional
 
 # gem "ProMotion-XLForm"

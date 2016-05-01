@@ -3,10 +3,9 @@ class DoctorInputScreen < PM::Screen
   stylesheet DoctorInputScreenStylesheet
 
   def on_load
+    append(UILabel, :doctor_label)
     append(UITextField, :doctor_name)
+    append(UILabel, :patient_label)
     append(UITextField, :patient_name)
-    append(UITextField, :drug_name)
-    append(UITextField, :notes)
-    append(UITextField, :drug_name)
   end
 end

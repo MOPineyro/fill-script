@@ -11,19 +11,25 @@ class DoctorInputScreenStylesheet < ApplicationStylesheet
     st.background_color = color.white
   end
 
-  def drug_name(st)
-    st.frame = {w: device.width - 20, h: 60, t: 85, centered: :horizontal}
-    st.background_color = color.blue
+  def doctor_label(st)
+    st.frame = {w: 200, h: 50, t: 55, l: 10}
+    st.text = "DOCTOR NAME"
   end
 
-  def doctor_name
-    st.frame = {w: device.width - 20, h: 60, t: 105, centered: :horizontal}
-    st.background_color = color.red
+  def doctor_name(st)
+    st.frame = {w: device.width - 20, h: 60, bp: 2, centered: :horizontal}
+    st.border_color = color.blackish
+    st.border_width = 2
   end
-  
-  def patient_name
+
+  def patient_name(st)
+    st.frame = {w: device.width - 20, h: 60, bp: 5, centered: :horizontal}
+    st.border_color = color.blackish
+    st.border_width = 2
   end
-  
-  def notes
+
+  def patient_label(st)
+    st.frame = {w: 200, h: 50, bp: 10, l: 10}
+    st.text = "PATIENT NAME"
   end
 end

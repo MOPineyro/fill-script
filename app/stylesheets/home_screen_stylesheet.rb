@@ -11,23 +11,19 @@ class HomeScreenStylesheet < ApplicationStylesheet
 
   def logo(st)
     st.frame = {w: device.width / 2, h: device.width / 2, t: 80, centered: :horizontal}
-    st.text_alignment = :center
     st.image = image.resource('heart.png')
   end
 
   def doctor(st)
     st.frame = {t: device.height/2, w: :full, h: 60, centered: :horizontal}
-    st.text_alignment = :center
     st.color = color.white
     st.font = font.medium
     st.background_color = color.blueish
     st.text = "I'M A DOCTOR"
-    st.roun
   end
 
   def patient(st)
     st.frame = {bp: 20, w: :full, h: 60, centered: :horizontal}
-    st.text_alignment = :center
     st.color = color.white
     st.background_color = color.greenish
     st.font = font.medium
